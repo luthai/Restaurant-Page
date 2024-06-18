@@ -1,14 +1,10 @@
-import _ from 'lodash';
+import mainContent from './main_page.js';
+import menuContent from './menu_page.js';
 import './style.css';
 
-function component() {
-    const element = document.createElement('div');
 
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
 
-    return element;
-}
 
-document.body.appendChild(component());
+mainContent();
+menuContent();
+
