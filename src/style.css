@@ -14,17 +14,19 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-image: url("./Images/pizza-pepperoni-944464-pxhere.com.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 header {
+    position: fixed;
     display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
     height: 50px;
+    width: 100%;
     padding: 10px;
 }
 
@@ -36,12 +38,13 @@ header {
     overflow: hidden;
     outline: none;
     font-size: 24px;
+    cursor: pointer;
 }
 
 
 .main-container {
     width: 100%;
-    height: 80%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,6 +64,7 @@ header {
     color: white;
     font-size: 24px;
     border: none;
+    cursor: pointer;
 }
 
 .open-text {
@@ -72,9 +76,9 @@ header {
     margin: 20px;
 }
 
-.menu-container {
+.menu-page {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -86,4 +90,72 @@ header {
     font-size: 60px;
     color: white;
     margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.menu-container {
+    border: 0.5px solid white;
+}
+
+.menu-buttons {
+    background-color: black;
+    color: white;
+    width: 225px;
+    height: 60px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-buttons.PIZZA {
+    background-color: red;
+}
+
+.menu-buttons:active {
+    background-color: red;
+}
+
+.menu-buttons:hover {
+    background-color: red;
+}
+
+.menues {
+    width: 100%;
+    height: auto;
+}
+
+.menu-item {
+    width: 100%;
+    height: auto;
+    padding: 0px 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-dish {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    & .dish-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0px;
+    }
+    & span {
+        width: 60px;
+        height: 40px;
+        background-color: grey;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin: 10px 0px;
+    }
+    & hr {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
 }
