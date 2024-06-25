@@ -5,7 +5,7 @@ const mainContent = () => {
     main.classList.add('main-container');
 
     const main_text = document.createElement('span');
-    const main_menu = document.createElement('button');
+    const main_menu = document.createElement('a');
 
     main_text.setAttribute('style', 'white-space: pre;');
     main_text.textContent = 'Italian\r\n';
@@ -15,6 +15,7 @@ const mainContent = () => {
 
     main_menu.textContent = 'LET ME SEE THE MENU';
     main_menu.classList.add('btn-main-menu');
+    main_menu.href = '#menu-page';
     main.appendChild(main_menu);
 
     const open_text = document.createElement('span');

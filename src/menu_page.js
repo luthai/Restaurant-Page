@@ -3,6 +3,7 @@
 const menuContent = () => {
     const menu_page = document.createElement('div');
     menu_page.classList.add('menu-page');
+    menu_page.id = 'menu-page';
 
     const menu_title = document.createElement('h1');
     menu_title.textContent = 'THE MENU';

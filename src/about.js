@@ -3,6 +3,7 @@ import onepage_restaurant from './Images/onepage_restaurant.jpg';
 const aboutContent = () => {
     const about_page = document.createElement('div');
     about_page.classList.add('about-page');
+    about_page.id = 'about-page';
 
     const about_title = document.createElement('h1');
     about_title.textContent = 'ABOUT';
